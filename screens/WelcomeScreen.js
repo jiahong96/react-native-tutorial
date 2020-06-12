@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, Image, Text, View} from 'react-native';
 
+import colors from '../constants/Colors';
+
 const bgImage = require('../assets/background.jpg');
 const logoImage = require('../assets/logo-red.png');
 
@@ -15,13 +17,13 @@ export default function WelcomeScreen() {
       <View style={{
         width: '100%',
         height: 70,
-        backgroundColor: '#fc5c65',
+        backgroundColor: colors.primary,
       }} />
 
       <View style={{
         width: '100%',
         height: 70,
-        backgroundColor: '#4ECDC4',
+        backgroundColor: colors.secondary,
       }} />
     </ImageBackground> 
   );

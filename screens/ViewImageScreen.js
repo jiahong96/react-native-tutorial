@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, ImageBackground, Image, Text, View, SafeAreaView} from 'react-native';
 
+import colors from '../constants/Colors';
+
 const image = require('../assets/chair.jpg')
 
 const ViewImageScreen = () => {
@@ -19,10 +21,10 @@ export default ViewImageScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: colors.black,
   },
   redBox: {
-    backgroundColor: '#fc5c65',
+    backgroundColor: colors.primary,
     width: 50,
     height: 50,
     position: 'absolute',
@@ -30,7 +32,7 @@ const styles = StyleSheet.create({
     left: 30,
   },
   greenBox: {
-    backgroundColor: '#4ECDC4',
+    backgroundColor: colors.secondary,
     width: 50,
     height: 50,
     position: 'absolute',
