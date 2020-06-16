@@ -1,13 +1,17 @@
 import React from 'react';
-import { StyleSheet, Image, View} from 'react-native';
+import { StyleSheet, View} from 'react-native';
+import {MaterialCommunityIcons} from '@expo/vector-icons';
 
-import WelcomeScreen from './screens/WelcomeScreen';
-import ViewImageScreen from './screens/ViewImageScreen';
+import AppText from './src/components/AppText';
 
 export default function App() {  
   return (
-    <View style={styles.container}>
-      <WelcomeScreen />
+    <View style={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center'
+    }}>
+        <AppText> I love React Native! </AppText>
     </View>
   );
 }
@@ -16,5 +20,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  },
+  }, 
 });
